@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+input{
+    display: block;
+    margin: 10px;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: none;
+    padding: 5px;
+}
+
+textarea{
+    display: block;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.form--container{
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 60%;
+    height: 70%;
+}
+
+.form--input{
+    position: relative;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    text-indent: 3px;
+    border: 1px solid grey;
+}
+.form--input::placeholder{
+    font-size: 1.1em;
+}
+.form--input:focus{
+    background-color: rgb(201, 238, 226);
+}
+.form--input:not(:empty){
+    background-color: rgb(201, 238, 226);
+}
+
+input[type=checkbox]{
+    accent-color: purple;
+}
+
+.label{
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.form--button{
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: large;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
